@@ -32,8 +32,6 @@ class MainClass
 
             if (szCommand.Equals("start"))
                 mc.DoStartSvc(szSvcName);
-            else if (szCommand.Equals("dacl"))
-                mc.DoUpdateSvcDacl(szSvcName);
             else if (szCommand.Equals("stop"))
                 mc.DoStopSvc(szSvcName);
             else
@@ -62,7 +60,6 @@ class MainClass
         Console.WriteLine("\tClient [command] [service_name]\n");
         Console.WriteLine("\t[command]");
         Console.WriteLine("\t  start");
-        Console.WriteLine("\t  dacl");
         Console.WriteLine("\t  stop");
     }
 }
